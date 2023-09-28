@@ -25,9 +25,3 @@ Once the plugin is installed, it can be used directly into a Jupyter notebook.
 
 .. image:: ../images/plot.png
     :width: 400
-
-.. note::
-    When `to_xarray` gets called, it tries to combine all the downloaded files, assuming that they can be either
-    concatenated by the time dimension or merged if they feature the same time span and non-overlapping variables.
-    Therefore, depending on how the data are sliced through files, the default algorith cannot work or make sense.
-    In those cases, it is up to the users to determine the best strategy relatively to their needs.

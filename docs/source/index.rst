@@ -3,9 +3,6 @@ Welcome to WEkEO CliMetLab CLMS Plugin!
 
 A dataset plugin for `CliMetLab <https://climetlab.readthedocs.io/en/latest/index.html>`_ for the CLMS datasets available on `WEkEO <https://www.wekeo.eu/>`_.
 
-Check out the :doc:`usage </usage>` section for further information, including
-how to :doc:`install </installation>` the project.
-
 Requirements
 ------------
 - Python 3
