@@ -7,8 +7,6 @@
 # nor does it submit to any jurisdiction.
 from __future__ import annotations
 
-import xarray as xr
-
 import climetlab as cml
 from climetlab import Dataset
 
@@ -50,3 +48,18 @@ class Main(Dataset):
 
         self.source = cml.load_source("wekeo", query)
         self._xarray = None
+
+    def to_xarray(self, **kwargs):
+        if self._xarray is not None:
+            return self._xarray
+
+        options = dict()
+        options.update(
+            kwargs.get(
+                "xarray_open_dataset_kwargs",
+                self.default_options["xarray_open_dataset_kwargs"],
+            )
+        )
+
+        self._xarray = super().to_xarray(**options)
+        return self._xarray
