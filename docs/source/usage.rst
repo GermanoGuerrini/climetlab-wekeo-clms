@@ -14,8 +14,8 @@ The minimum required argument for the function ``load_dataset`` is the dataset i
 
 The CliMetLab dataset id can be derived from the dataset id inside the WEkEO viewer. For example:
 
-WEkEO dataset id: ``EO:CLMS:DAT:CGLS_HOURLY_LST_GLOBAL_V2``
-CliMetLab dataset id: ``wekeo-clms-cgls-hourly-lst-global-v2``
+- WEkEO dataset id: ``EO:CLMS:DAT:CGLS_HOURLY_LST_GLOBAL_V2``
+- CliMetLab dataset id: ``wekeo-clms-cgls-hourly-lst-global-v2``
 
 .. code-block:: python
 
